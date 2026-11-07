@@ -56,14 +56,16 @@ p {
     border-radius: 8px;
 }
 
-.caixa-perfil img {
-    width: 100%;
-    /* Faz a sua foto se ajustar ao tamanho da caixa */
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    margin-bottom: 10px;
+.caixa-perfil {
+    width: 320px;
+    /* Um tamanho fixo excelente para caixas laterais */
+    margin: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
 }
 
 /*Imagem da cidade*/
@@ -83,7 +85,7 @@ aside {
 
     /*deixa os cantos da caixa arredondados*/
     float: left;
-    /* Faz a caixinha flutuar para a esquerda e o texto subir para o lado dela */
+    /*Faz a caixinha flutuar para a esquerda e o texto subir para o lado dela*/
 }
 
 aside img {
