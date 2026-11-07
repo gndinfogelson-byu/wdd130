@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gelson Nascimento Dias | WDD 130</title>
-    <!-- Correção: As metas tags devem ficar sempre dentro do HEAD -->
-    <meta name="description" content="Gelson N. Dias, Curso WDD 130 Fundamentos da WEB, Página inicial do curso">
+    <meta name="description"
+      content="Gelson N. Dias, Curso WDD 130 Fundamentos da WEB, Página inicial do curso">
     <meta name="author" content="Gelson N. Dias">
+    <!-- ATENÇÃO: Certifique-se de que esta linha abaixo está exatamente assim para carregar o seu CSS -->
+    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
-<body> <!-- Correção: Tag body fechada corretamente aqui -->
+
+<body>
 
     <header>
         <nav>
@@ -19,21 +23,38 @@
 
     <main>
         <h1>Gelson Nascimento Dias | WDD 130</h1>
-        <img src="imagens/perfil.jpg" alt="Olá, meu nome é Gelson N. Dias" width="200">
-        <p>Olá! Meu nome é Gelson N. Dias e sou de Goiânia - GO. Eu gosto de filmes épicos e de leitura, gosto de viajar com a família, já sou aposentado, mas continuo aprendendo. Gosto muito de informática, por isso sou estudante de Programação de Sistema Web na BYU-Idaho.</p>
-    </main>
 
-    <aside>
-        <h2>Brasil</h2>
-        <!-- Correção: Adicionados os sinais < e > que faltavam na tag img -->
-        <img src="imagens/vista-de-cima-da-cidade-de-goiania.jpg" alt="Paisagem de Goiânia" width="200">
-        <!-- Correção: O parágrafo foi movido para dentro do aside para fazer sentido estrutural -->
-        <p>O Brasil é um país localizado na América do Sul. Faz fronteira com Argentina e o Uruguai ao sul, Paraguai e Bolívia a sudoeste, Peru, Colombia e Venezuela a noroeste, Guiana, Suriname e Guiana Francesa ao norte, Além de possuir uma extensa costa ao longo do oceano Atlântico a leste. O país é um importante centro de agricultura, indústria, energia e tecnologia, além de um relevante destino turístico na região. Brasília é a capital do país, enquanto São Paulo é sua maior cidade. O Brasil abriga uma grande diversidade cultural, étnica e ambiental.</p>
-    </aside>
+        <section class="caixa-perfil">
+            <img src="imagens/perfil.jpg" alt="Olá, meu nome é Gelson N. Dias" width="200">
+
+            <!-- Seu parágrafo pessoal -->
+            <p>Olá! Meu nome é Gelson N. Dias e sou de Goiânia - GO. Eu gosto de filmes épicos e de
+                leitura, gosto de viajar com a família, já sou aposentado, mas continuo aprendendo.
+                Gosto muito de informática, por isso sou estudante de Programação de Sistema Web na
+                BYU-Idaho.</p>
+        </section>
+
+        <!-- CORREÇÃO: O aside entra AQUI, logo após o seu parágrafo pessoal -->
+        <aside>
+            <h2>Goiânia, GO</h2>
+            <img src="imagens/vista-de-cima-da-cidade-de-goiania.jpg" alt="Paisagem de Goiânia">
+            <p>"O Brasil é um país localizado na América do Sul. Faz fronteira com Argentina e o
+                Uruguai
+                ao sul, Paraguai e Bolívia a sudoeste, Peru, Colombia e Venezuela a noroeste,
+                Guiana,
+                Suriname e Guiana Francesa ao norte, Além de possuir uma extensa costa ao longo do
+                oceano Atlântico a leste. O país é um importante centro de agricultura, indústria,
+                energia e tecnologia, além de um relevante destino turístico na região. Brasília é a
+                capital do país, enquanto São Paulo é sua maior cidade. O Brasil abriga uma grande
+                diversidade cultural, étnica e ambiental."</p>
+        </aside>
+
+    </main> <!-- O main fecha aqui, depois de toda a parte de conteúdo -->
 
     <footer>
-        <p> &copy;2026 ❖ Gelson N. Dias ❖ Goiânia - GO</p>
+        <p>&copy; 2026 ❖ Gelson N. Dias ❖ Goiânia - GO</p>
     </footer>
 
 </body>
+
 </html>
