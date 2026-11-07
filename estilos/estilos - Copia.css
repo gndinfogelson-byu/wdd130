@@ -1,0 +1,113 @@
+/* Forma de colocar um comentário */
+
+/* Colocando margens na minha página*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fff;
+    margin: 0;
+}
+
+nav {
+    /* nav é a navegação da página*/
+    background-color: steelblue;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    color: steelblue;
+}
+
+/*Esta é a imagem da minha foto*/
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
+}
+
+.caixa-perfil {
+    width: 320px;
+    margin: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    background-color: #eee;
+    /* Fundo cinza */
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.caixa-perfil {
+    width: 320px;
+    /* Um tamanho fixo excelente para caixas laterais */
+    margin: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*Imagem da cidade*/
+aside {
+    /* o código mantém a proporção da tela conforme o tamanho da fonte.*/
+    font-size: 1.15em;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* O "a" no rgba está tratando da transparência da cor na página.*/
+    padding: 20px;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+
+    /*deixa os cantos da caixa arredondados*/
+    float: left;
+    /*Faz a caixinha flutuar para a esquerda e o texto subir para o lado dela*/
+}
+
+aside img {
+    /*width = Largura da imagem*/
+    /*height = Altura da imagem - auto irá colocar a largura proporcional a altura, isso mantém a qualidade da imagem*/
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    text-align: center;
+    /* Garante que o texto fique centralizado como na foto */
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+
+    clear: both;
+}
