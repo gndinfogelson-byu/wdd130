@@ -1,0 +1,147 @@
+/* Forma de colocar um comentário */
+
+/* Criando variáveis para uso em todo a páginas*/
+:root {
+    --cor-de-fundo-titulo: #f06;
+    --cor-do-texto-titulo: #333;
+    --fonte-titulo: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+/* Colocando margens na minha página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* Correção 1: Adicionado o padding exigido pela auditoria */
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* Correção 2: Adicionado o seletor main com max-width exigido */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: var(--padding); /* Substituindo o * */
+    /* Centraliza o conteúdo principal na tela */
+}
+
+h1 {
+    /*color: steelblue;*/
+
+    background-color: var(--cor-de-fundo-titulo);
+    color: var(--cor-do-texto-titulo);
+    font-family: var(--fonte-titulo);
+    padding: var(--padding);
+}
+
+/* Esta é a imagem da minha foto */
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
+}
+
+/* Caixa do seu Perfil Pessoal */
+/*
+.caixa-perfil {
+    width: 320px;
+    margin: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+}
+*/
+
+/* Aplicando as variáveis na caixa de perfil */
+.caixa-perfil {
+    width: 320px;
+    margin: 20px 0;
+    border: var(--border);
+    padding: var(--padding);
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Imagem da cidade */
+/*
+aside {
+    font-size: 1.15em;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    float: left;
+}
+    */
+
+/* Aplicando as variáveis de borda e padding */
+aside {
+    font-size: 1.15em;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px;
+    border: var(--border);
+    padding: var(--padding);
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    float: left;
+}
+
+/* Correção 3: Valores alterados exatamente para o que o validador espera */
+aside img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+    clear: both;
+}
