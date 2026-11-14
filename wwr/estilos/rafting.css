@@ -1,0 +1,127 @@
+/* Criando variáveis para uso em todo a páginas*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor-de-fundo-titulo: #55a630;
+    --cor-do-texto-titulo: #333;
+    --cor-primaria: #55a630;
+    --cor-secundaria: #f4a261;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #e9c46a;
+    --fonte-titulo: "Times New Roman", "Georgia", "serif";
+    --border: 1px solid rgb(0 0 0 / 0.1);
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2));
+}
+
+header {
+    /*display: flex;*/
+    flex-direction: column; align-items: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header nav {
+    /*display: flex;
+    flex-direction: column; - coloca os links um abaixo do outro */
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 4px 0;
+    color: var(--cor-destaque2);
+}
+
+header, main, footer{
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+body{
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1, h2{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+h1{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--cor-destaque1);
+    color: #fff; /*texto branco - ver se tem contraste para cor fundo*/
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 32px;
+    height: auto;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #e9c46a;
+    padding: 15px;
+    opacity: 0.9;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 15px;
+}
+
+.hero p {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
