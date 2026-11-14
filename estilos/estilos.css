@@ -1,15 +1,13 @@
-/* Forma de colocar um comentário */
-
-/* Criando variáveis para uso em todo a páginas*/
+/* Variáveis globais da página */
 :root {
-    --cor-de-fundo-titulo: #f06;
+    --cor-de-fundo-titulo: rgb(0, 140, 255);
     --cor-do-texto-titulo: #333;
     --fonte-titulo: 'Montserrat', Helvetica, sans-serif;
     --padding: 1rem;
     --border: 1px solid rgb(0 0 0 / 0.1);
 }
 
-/* Colocando margens na minha página */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +20,9 @@ body {
     line-height: 1.5;
     color: #222;
     background-color: #fff;
-    margin: 0;
 }
 
-/* Correção 1: Adicionado o padding exigido pela auditoria */
+/* Navegação */
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -37,95 +34,51 @@ nav a {
     display: block;
 }
 
-/* Correção 2: Adicionado o seletor main com max-width exigido */
+/* Conteúdo Principal */
 main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: var(--padding); /* Substituindo o * */
-    /* Centraliza o conteúdo principal na tela */
+    max-width: 650px;
+    margin: 0;
+    padding: var(--padding);
 }
 
 h1 {
-    /*color: steelblue;*/
-
     background-color: var(--cor-de-fundo-titulo);
     color: var(--cor-do-texto-titulo);
     font-family: var(--fonte-titulo);
     padding: var(--padding);
+    margin-bottom: 1rem;
 }
 
-/* Esta é a imagem da minha foto */
 main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
     padding: 0;
 }
 
-/* Caixa do seu Perfil Pessoal */
-/*
-.caixa-perfil {
-    width: 320px;
-    margin: 20px 0;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    border-radius: 8px;
-}
-*/
-
-/* Aplicando as variáveis na caixa de perfil */
-.caixa-perfil {
-    width: 320px;
-    margin: 20px 0;
-    border: var(--border);
-    padding: var(--padding);
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    border-radius: 8px;
-}
-
-/* Imagem da cidade */
-/*
+/* Barra Lateral (Cidade) */
 aside {
-    font-size: 1.15em;
-    width: 90%;
-    max-width: 700px;
-    margin: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    background-color: #eee;
-    color: #333;
+    width: 20rem;
     text-align: center;
-    border-radius: 8px;
-    float: left;
-}
-    */
-
-/* Aplicando as variáveis de borda e padding */
-aside {
-    font-size: 1.15em;
-    width: 90%;
-    max-width: 700px;
-    margin: 20px;
-    border: var(--border);
-    padding: var(--padding);
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    border-radius: 8px;
-    float: left;
+    position: relative;
 }
 
-/* Correção 3: Valores alterados exatamente para o que o validador espera */
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
 aside img {
     width: 200px;
     height: auto;
@@ -139,9 +92,28 @@ aside p {
     text-align: center;
 }
 
+/* Rodapé alinhado com o conteúdo principal */
 footer {
-    margin-top: 1em;
+    max-width: 650px;
+    margin: 1rem 0 0 1rem;
     border-top: 1px solid #000;
+    padding-top: 0.5rem;
     text-align: center;
     clear: both;
+}
+
+/* Classes reutilizáveis */
+.caixa {
+    margin: 1rem;
+    border: var(--border);
+    padding: var(--padding);
+    background-color: #ddd;
+    color: #000;
+    clear: both;
+}
+
+ul.caixa {
+    margin: 1rem 0;
+    padding-left: 2.5rem;
+    line-height: 1.8;
 }
