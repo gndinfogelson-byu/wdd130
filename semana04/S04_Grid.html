@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width-device width, inicial-scale=1.0">
+
+    <title>"Gride Simples" </title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* O CSS sempre irá usar a última instrução das propriedade*/
+            grid-template-columns: auto auto; /* A função auto redimenciona o grid altomaticamente.*/
+            grid-template-columns: 200 px 200px 200px; /*Você estabelece suas dimenções */
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Esta função 1fr dimenciona automaticamente cada item proporcionalmente*/
+            grid-template-columns: repeat(5, 1fr); /* Aqui temos cinco colunas de mesmo tamanho*/
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 30px;
+            background-color: #8cc1ec;
+            padding: 10px;
+        }
+    
+        .grid-item{
+            background-color: #dcedf8;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+    </div>
+</body>
+</html>
