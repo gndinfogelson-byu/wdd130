@@ -5,13 +5,6 @@
 }
 
 :root {
-    /*   --cor-primaria: #55a630;
-    --cor-secundaria: #f4a261;
-    --cor-destaque1: #264653;
-    --cor-destaque2: #e9c46a;
-    --fonte-titulo: "Times New Roman", "Georgia", "serif";
-    --fonte-body: Arial, Helvetica, sans-serif;*/
-
     --cor-primaria: #2b6e12;
     --cor-secundaria: #f4a261;
     --cor-destaque1: #264653;
@@ -34,13 +27,7 @@ footer {
 
 /* 1 e 3. Cabeçalho usando CSS Grid e estilizado */
 header {
-    /*background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 20px;*/
+
     background-color: var(--cor-primaria);
     color: #ffffff;
     display: grid;
@@ -63,15 +50,6 @@ header nav {
     align-items: center;
 }
 
-/*header nav a {
-    color: var(--cor-destaque2);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}*/
-
 header nav a {
     color: #ffffff;
     text-decoration: none;
@@ -80,42 +58,18 @@ header nav a {
     border-radius: 5px;
 }
 
-/*header nav a:hover {
-    background-color: var(--cor-destaque2);
-    color: var(--cor-destaque1);
-}*/
-
 header nav a:hover {
-    background-color: var(--cor-destaque2);
-    color: var(--cor-destaque1);
-    /* Azul escuro no fundo amarelo = 6.03:1 (Aprovado) */
+    background-color: var(--cor-destaque1);
+    color: #ffffff;
 }
 
 /* Títulos */
-h1,
-/*h2 {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-primaria);
-    text-align: center;
-}*/
-
 h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     /* Verde escuro no branco = > 6:1 (Aprovado) */
     text-align: center;
 }
-
-/*h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.85;
-    background-color: var(--cor-destaque1);
-    color: #fff;
-}*/
 
 h1 {
     font-family: var(--fonte-titulo);
